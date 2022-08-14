@@ -1,3 +1,4 @@
+// https://www.reddit.com/r/dailyprogrammer/comments/pjbj8/easy_challenge_2/
 #include <iostream>
 #include <cmath>
 
