@@ -20,12 +20,3 @@ int main(int argc, char const *argv[])
     std::cout << 2*sum << std::endl;
     return 0;
 }
-
-/*Mine
- *3.1415926535897932391633302629
- *3.1415926535897932384626433832
- *Correct ^^
- *
- *Breaksdown after the 18th digit, I can't figure this out at the moment
- *I will have to come back to this in the future
- */
