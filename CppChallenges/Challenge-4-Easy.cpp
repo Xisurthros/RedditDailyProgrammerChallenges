@@ -1,3 +1,4 @@
+// https://www.reddit.com/r/dailyprogrammer/comments/pm6oj/2122012_challenge_4_easy/
 #include <cstdlib>
 #include <iostream>
 #include <time.h>
