@@ -1,32 +1,21 @@
-// https://www.reddit.com/r/dailyprogrammer/comments/pii6j/difficult_challenge_1/
+// https://www.reddit.com/r/dailyprogrammer/comments/pih8x/easy_challenge_1/
+
 #include <iostream>
+#include <string>
 
-int main()
+int main(int argc, char const *argv[])
 {
-	int top = 101;
-	int bottom = 0;
-	int attempts = 1;
+	std::string name;
+	std::string age;
+	std::string username;
 
-	char reply;
+	std::cout << "Enter your name: ";
+	getline(std::cin, name);
+	std::cout << "Enter your age: ";
+	getline(std::cin, age);
+	std::cout << "Enter your Reddit username: ";
+	getline(std::cin, username);
 
-	std::cout << "STARTING!" << std::endl;
-	std::cout << "Higher = h\nLower = l\nCorrect = c" << std::endl;
-
-	while (reply != 'c'){
-		int guess = int((bottom+top)/2);
-		std::cout << guess << std::endl;
-		std::cout << "Higher, Lower or Correct?:  ";
-		std::cin >> reply;
-		if (reply == 'c'){
-			printf("Computer took %i attempts", attempts);
-			break;
-		} else if (reply == 'h'){
-			bottom = guess;
-			attempts++;
-		} else if (reply = 'l'){
-			top = guess;
-			attempts++;
-		}
-	}
+	std::cout << "Your name is " << name << ", you are " << age << " years old, and your username is " << username << std::endl;
 	return 0;
 }
